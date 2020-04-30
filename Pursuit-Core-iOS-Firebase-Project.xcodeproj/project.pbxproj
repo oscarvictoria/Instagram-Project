@@ -13,6 +13,7 @@
 		BE70F65B245B47F600C3A222 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE70F659245B47F600C3A222 /* Main.storyboard */; };
 		BE70F65D245B47FA00C3A222 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE70F65C245B47FA00C3A222 /* Assets.xcassets */; };
 		BE70F660245B47FA00C3A222 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE70F65E245B47FA00C3A222 /* LaunchScreen.storyboard */; };
+		BE70F668245B4AD100C3A222 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE70F667245B4AD100C3A222 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		BE70F65C245B47FA00C3A222 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE70F65F245B47FA00C3A222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE70F661245B47FA00C3A222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE70F667245B4AD100C3A222 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				BE70F65C245B47FA00C3A222 /* Assets.xcassets */,
 				BE70F65E245B47FA00C3A222 /* LaunchScreen.storyboard */,
 				BE70F661245B47FA00C3A222 /* Info.plist */,
+				BE70F667245B4AD100C3A222 /* GoogleService-Info.plist */,
 			);
 			path = "Pursuit-Core-iOS-Firebase-Project";
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE70F660245B47FA00C3A222 /* LaunchScreen.storyboard in Resources */,
+				BE70F668245B4AD100C3A222 /* GoogleService-Info.plist in Resources */,
 				BE70F65D245B47FA00C3A222 /* Assets.xcassets in Resources */,
 				BE70F65B245B47F600C3A222 /* Main.storyboard in Resources */,
 			);
