@@ -3,29 +3,41 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F6AD827361DE8B41D8C7AD7 /* Pods_Pursuit_Core_iOS_Firebase_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B4A38527FDFDD9C5F13C2C /* Pods_Pursuit_Core_iOS_Firebase_Project.framework */; };
 		BE70F654245B47F600C3A222 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE70F653245B47F600C3A222 /* AppDelegate.swift */; };
 		BE70F656245B47F600C3A222 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE70F655245B47F600C3A222 /* SceneDelegate.swift */; };
-		BE70F658245B47F600C3A222 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE70F657245B47F600C3A222 /* ViewController.swift */; };
-		BE70F65B245B47F600C3A222 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE70F659245B47F600C3A222 /* Main.storyboard */; };
 		BE70F65D245B47FA00C3A222 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE70F65C245B47FA00C3A222 /* Assets.xcassets */; };
 		BE70F660245B47FA00C3A222 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE70F65E245B47FA00C3A222 /* LaunchScreen.storyboard */; };
 		BE70F668245B4AD100C3A222 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE70F667245B4AD100C3A222 /* GoogleService-Info.plist */; };
+		BE70F671245B528800C3A222 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE70F670245B528800C3A222 /* LoginViewController.swift */; };
+		BE70F673245B52A100C3A222 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE70F672245B52A100C3A222 /* LoginView.swift */; };
+		BE70F677245B52E500C3A222 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE70F676245B52E500C3A222 /* MainTabBarController.swift */; };
+		BE70F67B245B574E00C3A222 /* AuthenticationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE70F67A245B574E00C3A222 /* AuthenticationSession.swift */; };
+		BE70F67D245B577A00C3A222 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE70F67C245B577A00C3A222 /* DatabaseService.swift */; };
+		BE70F67F245B579900C3A222 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE70F67E245B579900C3A222 /* StorageService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF4FF1948C5A5896E921B317 /* Pods-Pursuit-Core-iOS-Firebase-Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pursuit-Core-iOS-Firebase-Project.release.xcconfig"; path = "Target Support Files/Pods-Pursuit-Core-iOS-Firebase-Project/Pods-Pursuit-Core-iOS-Firebase-Project.release.xcconfig"; sourceTree = "<group>"; };
+		AF5681F7E15893D0E99405A0 /* Pods-Pursuit-Core-iOS-Firebase-Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pursuit-Core-iOS-Firebase-Project.debug.xcconfig"; path = "Target Support Files/Pods-Pursuit-Core-iOS-Firebase-Project/Pods-Pursuit-Core-iOS-Firebase-Project.debug.xcconfig"; sourceTree = "<group>"; };
+		B5B4A38527FDFDD9C5F13C2C /* Pods_Pursuit_Core_iOS_Firebase_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pursuit_Core_iOS_Firebase_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE70F650245B47F600C3A222 /* Pursuit-Core-iOS-Firebase-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pursuit-Core-iOS-Firebase-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE70F653245B47F600C3A222 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE70F655245B47F600C3A222 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BE70F657245B47F600C3A222 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BE70F65A245B47F600C3A222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE70F65C245B47FA00C3A222 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE70F65F245B47FA00C3A222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE70F661245B47FA00C3A222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE70F667245B4AD100C3A222 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BE70F670245B528800C3A222 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BE70F672245B52A100C3A222 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		BE70F676245B52E500C3A222 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		BE70F67A245B574E00C3A222 /* AuthenticationSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationSession.swift; sourceTree = "<group>"; };
+		BE70F67C245B577A00C3A222 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		BE70F67E245B579900C3A222 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F6AD827361DE8B41D8C7AD7 /* Pods_Pursuit_Core_iOS_Firebase_Project.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2FBECAF2592F79B8472BB230 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF5681F7E15893D0E99405A0 /* Pods-Pursuit-Core-iOS-Firebase-Project.debug.xcconfig */,
+				AF4FF1948C5A5896E921B317 /* Pods-Pursuit-Core-iOS-Firebase-Project.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		468EE825971DF0D77EBA89EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5B4A38527FDFDD9C5F13C2C /* Pods_Pursuit_Core_iOS_Firebase_Project.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BE70F647245B47F600C3A222 = {
 			isa = PBXGroup;
 			children = (
 				BE70F652245B47F600C3A222 /* Pursuit-Core-iOS-Firebase-Project */,
 				BE70F651245B47F600C3A222 /* Products */,
+				2FBECAF2592F79B8472BB230 /* Pods */,
+				468EE825971DF0D77EBA89EF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +90,76 @@
 		BE70F652245B47F600C3A222 /* Pursuit-Core-iOS-Firebase-Project */ = {
 			isa = PBXGroup;
 			children = (
-				BE70F653245B47F600C3A222 /* AppDelegate.swift */,
-				BE70F655245B47F600C3A222 /* SceneDelegate.swift */,
-				BE70F657245B47F600C3A222 /* ViewController.swift */,
-				BE70F659245B47F600C3A222 /* Main.storyboard */,
-				BE70F65C245B47FA00C3A222 /* Assets.xcassets */,
-				BE70F65E245B47FA00C3A222 /* LaunchScreen.storyboard */,
+				BE70F66F245B51BE00C3A222 /* Cells */,
+				BE70F66E245B51B600C3A222 /* Extensions */,
+				BE70F66D245B51B000C3A222 /* Models */,
+				BE70F66C245B519C00C3A222 /* Firebase Services */,
+				BE70F66B245B519700C3A222 /* Views */,
+				BE70F66A245B519000C3A222 /* Controllers */,
+				BE70F669245B516900C3A222 /* Supporting Files */,
 				BE70F661245B47FA00C3A222 /* Info.plist */,
 				BE70F667245B4AD100C3A222 /* GoogleService-Info.plist */,
 			);
 			path = "Pursuit-Core-iOS-Firebase-Project";
+			sourceTree = "<group>";
+		};
+		BE70F669245B516900C3A222 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE70F65E245B47FA00C3A222 /* LaunchScreen.storyboard */,
+				BE70F65C245B47FA00C3A222 /* Assets.xcassets */,
+				BE70F655245B47F600C3A222 /* SceneDelegate.swift */,
+				BE70F653245B47F600C3A222 /* AppDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE70F66A245B519000C3A222 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BE70F670245B528800C3A222 /* LoginViewController.swift */,
+				BE70F676245B52E500C3A222 /* MainTabBarController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BE70F66B245B519700C3A222 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BE70F672245B52A100C3A222 /* LoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BE70F66C245B519C00C3A222 /* Firebase Services */ = {
+			isa = PBXGroup;
+			children = (
+				BE70F67A245B574E00C3A222 /* AuthenticationSession.swift */,
+				BE70F67C245B577A00C3A222 /* DatabaseService.swift */,
+				BE70F67E245B579900C3A222 /* StorageService.swift */,
+			);
+			path = "Firebase Services";
+			sourceTree = "<group>";
+		};
+		BE70F66D245B51B000C3A222 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BE70F66E245B51B600C3A222 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BE70F66F245B51BE00C3A222 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +169,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE70F664245B47FA00C3A222 /* Build configuration list for PBXNativeTarget "Pursuit-Core-iOS-Firebase-Project" */;
 			buildPhases = (
+				2C68F36F3FFD7118DAA66635 /* [CP] Check Pods Manifest.lock */,
 				BE70F64C245B47F600C3A222 /* Sources */,
 				BE70F64D245B47F600C3A222 /* Frameworks */,
 				BE70F64E245B47F600C3A222 /* Resources */,
+				FB35DE00A135E15F31BBC049 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,34 +225,72 @@
 				BE70F660245B47FA00C3A222 /* LaunchScreen.storyboard in Resources */,
 				BE70F668245B4AD100C3A222 /* GoogleService-Info.plist in Resources */,
 				BE70F65D245B47FA00C3A222 /* Assets.xcassets in Resources */,
-				BE70F65B245B47F600C3A222 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C68F36F3FFD7118DAA66635 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pursuit-Core-iOS-Firebase-Project-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB35DE00A135E15F31BBC049 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pursuit-Core-iOS-Firebase-Project/Pods-Pursuit-Core-iOS-Firebase-Project-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pursuit-Core-iOS-Firebase-Project/Pods-Pursuit-Core-iOS-Firebase-Project-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pursuit-Core-iOS-Firebase-Project/Pods-Pursuit-Core-iOS-Firebase-Project-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BE70F64C245B47F600C3A222 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE70F658245B47F600C3A222 /* ViewController.swift in Sources */,
+				BE70F671245B528800C3A222 /* LoginViewController.swift in Sources */,
 				BE70F654245B47F600C3A222 /* AppDelegate.swift in Sources */,
+				BE70F677245B52E500C3A222 /* MainTabBarController.swift in Sources */,
+				BE70F673245B52A100C3A222 /* LoginView.swift in Sources */,
+				BE70F67B245B574E00C3A222 /* AuthenticationSession.swift in Sources */,
+				BE70F67F245B579900C3A222 /* StorageService.swift in Sources */,
 				BE70F656245B47F600C3A222 /* SceneDelegate.swift in Sources */,
+				BE70F67D245B577A00C3A222 /* DatabaseService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BE70F659245B47F600C3A222 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BE70F65A245B47F600C3A222 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BE70F65E245B47FA00C3A222 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -286,6 +418,7 @@
 		};
 		BE70F665245B47FA00C3A222 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF5681F7E15893D0E99405A0 /* Pods-Pursuit-Core-iOS-Firebase-Project.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +437,7 @@
 		};
 		BE70F666245B47FA00C3A222 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF4FF1948C5A5896E921B317 /* Pods-Pursuit-Core-iOS-Firebase-Project.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
