@@ -19,6 +19,13 @@
 		BE70F67B245B574E00C3A222 /* AuthenticationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE70F67A245B574E00C3A222 /* AuthenticationSession.swift */; };
 		BE70F67D245B577A00C3A222 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE70F67C245B577A00C3A222 /* DatabaseService.swift */; };
 		BE70F67F245B579900C3A222 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE70F67E245B579900C3A222 /* StorageService.swift */; };
+		BE70F681245B624F00C3A222 /* UIViewConroller + Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE70F680245B624F00C3A222 /* UIViewConroller + Alerts.swift */; };
+		BE70F683245B698800C3A222 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE70F682245B698800C3A222 /* FeedViewController.swift */; };
+		BE70F685245B69A600C3A222 /* CreatePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE70F684245B69A600C3A222 /* CreatePostViewController.swift */; };
+		BE70F687245B69C100C3A222 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE70F686245B69C100C3A222 /* ProfileViewController.swift */; };
+		BE70F689245B6C3900C3A222 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE70F688245B6C3900C3A222 /* FeedView.swift */; };
+		BE70F68B245B6C4800C3A222 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE70F68A245B6C4800C3A222 /* CreateView.swift */; };
+		BE70F68D245B6C5600C3A222 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE70F68C245B6C5600C3A222 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +45,13 @@
 		BE70F67A245B574E00C3A222 /* AuthenticationSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationSession.swift; sourceTree = "<group>"; };
 		BE70F67C245B577A00C3A222 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
 		BE70F67E245B579900C3A222 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		BE70F680245B624F00C3A222 /* UIViewConroller + Alerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewConroller + Alerts.swift"; sourceTree = "<group>"; };
+		BE70F682245B698800C3A222 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		BE70F684245B69A600C3A222 /* CreatePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewController.swift; sourceTree = "<group>"; };
+		BE70F686245B69C100C3A222 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		BE70F688245B6C3900C3A222 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		BE70F68A245B6C4800C3A222 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
+		BE70F68C245B6C5600C3A222 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +133,9 @@
 			children = (
 				BE70F670245B528800C3A222 /* LoginViewController.swift */,
 				BE70F676245B52E500C3A222 /* MainTabBarController.swift */,
+				BE70F682245B698800C3A222 /* FeedViewController.swift */,
+				BE70F684245B69A600C3A222 /* CreatePostViewController.swift */,
+				BE70F686245B69C100C3A222 /* ProfileViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -127,6 +144,9 @@
 			isa = PBXGroup;
 			children = (
 				BE70F672245B52A100C3A222 /* LoginView.swift */,
+				BE70F688245B6C3900C3A222 /* FeedView.swift */,
+				BE70F68A245B6C4800C3A222 /* CreateView.swift */,
+				BE70F68C245B6C5600C3A222 /* ProfileView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -151,6 +171,7 @@
 		BE70F66E245B51B600C3A222 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				BE70F680245B624F00C3A222 /* UIViewConroller + Alerts.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -279,10 +300,17 @@
 			files = (
 				BE70F671245B528800C3A222 /* LoginViewController.swift in Sources */,
 				BE70F654245B47F600C3A222 /* AppDelegate.swift in Sources */,
+				BE70F683245B698800C3A222 /* FeedViewController.swift in Sources */,
+				BE70F681245B624F00C3A222 /* UIViewConroller + Alerts.swift in Sources */,
+				BE70F68B245B6C4800C3A222 /* CreateView.swift in Sources */,
 				BE70F677245B52E500C3A222 /* MainTabBarController.swift in Sources */,
 				BE70F673245B52A100C3A222 /* LoginView.swift in Sources */,
+				BE70F68D245B6C5600C3A222 /* ProfileView.swift in Sources */,
+				BE70F687245B69C100C3A222 /* ProfileViewController.swift in Sources */,
 				BE70F67B245B574E00C3A222 /* AuthenticationSession.swift in Sources */,
+				BE70F685245B69A600C3A222 /* CreatePostViewController.swift in Sources */,
 				BE70F67F245B579900C3A222 /* StorageService.swift in Sources */,
+				BE70F689245B6C3900C3A222 /* FeedView.swift in Sources */,
 				BE70F656245B47F600C3A222 /* SceneDelegate.swift in Sources */,
 				BE70F67D245B577A00C3A222 /* DatabaseService.swift in Sources */,
 			);
