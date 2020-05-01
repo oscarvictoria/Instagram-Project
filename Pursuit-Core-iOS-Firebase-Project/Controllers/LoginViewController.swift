@@ -27,6 +27,8 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .systemBlue
         configureButtons()
+        loginView.usernameTextField.delegate = self
+        loginView.passwordTextField.delegate = self
     }
     
     private func configureButtons() {
@@ -129,4 +131,10 @@ extension UIViewController {
     }
     
   
+}
+
+extension LoginViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+    }
 }
