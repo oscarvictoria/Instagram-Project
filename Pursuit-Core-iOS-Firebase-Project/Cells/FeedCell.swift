@@ -8,6 +8,7 @@
 
 import UIKit
 import Kingfisher
+import Firebase
 
 class FeedCell: UICollectionViewCell {
     
@@ -28,6 +29,11 @@ class FeedCell: UICollectionViewCell {
         return label
     }()
     
+    public lazy var detailTextView: UITextView = {
+        let textView = UITextView()
+        return textView
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: UIScreen.main.bounds)
         commonInit()
@@ -41,6 +47,7 @@ class FeedCell: UICollectionViewCell {
     private func commonInit() {
         configureImage()
         configureTimeLabel()
+        configureTextView()
     }
     
     private func configureImage() {
@@ -50,7 +57,7 @@ class FeedCell: UICollectionViewCell {
             imageView.topAnchor.constraint(equalTo: topAnchor),
             imageView.leadingAnchor.constraint(equalTo: leadingAnchor),
             imageView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            imageView.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.6)
+            imageView.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.7)
         ])
     }
     
@@ -64,15 +71,27 @@ class FeedCell: UICollectionViewCell {
         ])
     }
     
+    private func configureTextView() {
+        addSubview(detailTextView)
+        detailTextView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            detailTextView.topAnchor.constraint(equalTo: timeLabel.bottomAnchor, constant: 4),
+            detailTextView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            detailTextView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            detailTextView.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.2)
+        ])
+    }
+    
   
     
     public func configureCell(for post: Post) {
-        updateUI(imageURL: post.imageURL, date: post.listedDate.dateValue())
+        updateUI(imageURL: post.imageURL, date: post.listedDate, description: post.description)
     }
     
-    private func updateUI(imageURL: String, date: Date) {
+    private func updateUI(imageURL: String, date: Timestamp, description: String) {
         imageView.kf.setImage(with: URL(string: imageURL))
-        timeLabel.text = date.description
+        timeLabel.text = date.dateValue().dateString()
+        detailTextView.text = description
     }
     
     

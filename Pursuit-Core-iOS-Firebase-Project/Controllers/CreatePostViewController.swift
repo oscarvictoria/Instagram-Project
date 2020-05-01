@@ -98,6 +98,7 @@ class CreatePostViewController: UIViewController {
                 }
             case .success(let documentId):
                 self.uploadPhoto(photo: resizedImage, documentId: documentId)
+                self.showAlert(title: "Post Successfully uploaded", message: nil)
             }
         }
         
@@ -124,9 +125,7 @@ class CreatePostViewController: UIViewController {
                      self.showAlert(title: "Fail to update item", message: "\(error.localizedDescription)")
                  }
              } else {
-                 DispatchQueue.main.async {
-                    self.showAlert(title: "Post Successfully uploaded", message: nil)
-                 }
+                print("success")
              }
          }
      }

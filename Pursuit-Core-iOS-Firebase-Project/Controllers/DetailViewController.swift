@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import Kingfisher
 
 class DetailViewController: UIViewController {
+    
+    public var detailPost: Post!
     
     private var detailView = DetailView()
     
@@ -20,10 +23,19 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemGray
+        updateUI()
     
     }
     
+    private func updateUI() {
+        guard let post = detailPost else {
+            return
+        }
+        detailView.detailPhoto.kf.setImage(with: URL(string: post.imageURL))
+        detailView.displayNameLabel.text = post.postedBy
+        detailView.detailDescription.text = post.description
 
+    }
   
 
 }

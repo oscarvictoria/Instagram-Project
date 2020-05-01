@@ -87,7 +87,9 @@ extension FeedViewController: UICollectionViewDelegateFlowLayout {
       }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let post = posts[indexPath.row]
         let detailVC = DetailViewController()
+        detailVC.detailPost = post
         navigationController?.pushViewController(detailVC, animated: true)
     }
 }
