@@ -10,13 +10,13 @@ import UIKit
 
 class CreateView: UIView {
     
-    private lazy var descriptionTextView:UITextView = {
+    public lazy var descriptionTextView:UITextView = {
         let textView = UITextView()
         textView.backgroundColor = .systemBackground
         return textView
     }()
     
-    private lazy var selectedPhoto: UIImageView = {
+    public lazy var selectedPhoto: UIImageView = {
         let photo = UIImageView()
         photo.image = UIImage(systemName: "photo.fill")
         photo.contentMode = .scaleAspectFill
