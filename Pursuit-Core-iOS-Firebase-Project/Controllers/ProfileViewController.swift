@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseAuth
+import Kingfisher
 
 class ProfileViewController: UIViewController {
     
@@ -20,6 +21,7 @@ class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .systemOrange
         configureButtons()
     }
     
