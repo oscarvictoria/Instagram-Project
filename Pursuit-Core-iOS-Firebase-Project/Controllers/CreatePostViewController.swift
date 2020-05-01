@@ -47,9 +47,16 @@ class CreatePostViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemBackground
+        view.backgroundColor = .systemOrange
         configureNavBar()
         addGestures()
+        configureTextView()
+    }
+    
+    private func configureTextView() {
+        createView.descriptionTextView.delegate = self
+        createView.descriptionTextView.text = "Caption goes here"
+        createView.descriptionTextView.textColor = UIColor.lightGray
     }
     
     private func configureNavBar() {
@@ -105,30 +112,30 @@ class CreatePostViewController: UIViewController {
     }
     
     private func uploadPhoto(photo: UIImage, documentId: String) {
-         storageService.uploadPhoto(postId: documentId, image: photo) { (result) in
-             switch result {
-             case .failure(let error):
-                 DispatchQueue.main.async {
-                     self.showAlert(title: "Error uploading photo", message: "\(error.localizedDescription)")
-                 }
-             case .success(let url):
+        storageService.uploadPhoto(postId: documentId, image: photo) { (result) in
+            switch result {
+            case .failure(let error):
+                DispatchQueue.main.async {
+                    self.showAlert(title: "Error uploading photo", message: "\(error.localizedDescription)")
+                }
+            case .success(let url):
                 self.updateItemImageURL(url, documentsId: documentId)
-             }
-         }
-     }
+            }
+        }
+    }
     
     private func updateItemImageURL(_ url: URL, documentsId: String) {
-         // update an existing document on firestore
-         Firestore.firestore().collection(DatabaseService.postCollection).document(documentsId).updateData(["imageURL" : url.absoluteString]) { (error) in
-             if let error = error {
-                 DispatchQueue.main.async {
-                     self.showAlert(title: "Fail to update item", message: "\(error.localizedDescription)")
-                 }
-             } else {
+        // update an existing document on firestore
+        Firestore.firestore().collection(DatabaseService.postCollection).document(documentsId).updateData(["imageURL" : url.absoluteString]) { (error) in
+            if let error = error {
+                DispatchQueue.main.async {
+                    self.showAlert(title: "Fail to update item", message: "\(error.localizedDescription)")
+                }
+            } else {
                 print("success")
-             }
-         }
-     }
+            }
+        }
+    }
     
     
 }
@@ -141,3 +148,13 @@ extension CreatePostViewController: UIImagePickerControllerDelegate, UINavigatio
         dismiss(animated: true, completion: nil)
     }
 }
+
+extension CreatePostViewController: UITextViewDelegate {
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if textView.textColor == UIColor.lightGray {
+            textView.text = ""
+            textView.textColor = UIColor.black
+        }
+    }
+}
+

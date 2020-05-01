@@ -54,10 +54,10 @@ class CreateView: UIView {
         addSubview(selectedPhoto)
         selectedPhoto.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            selectedPhoto.topAnchor.constraint(equalTo: descriptionTextView.bottomAnchor, constant: 20),
+            selectedPhoto.topAnchor.constraint(equalTo: descriptionTextView.bottomAnchor, constant: 80),
             selectedPhoto.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
             selectedPhoto.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
-            selectedPhoto.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.3)
+            selectedPhoto.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.4)
         ])
         
     }

@@ -22,7 +22,7 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemGray
+        view.backgroundColor = .systemBackground
         updateUI()
     
     }
@@ -32,9 +32,9 @@ class DetailViewController: UIViewController {
             return
         }
         detailView.detailPhoto.kf.setImage(with: URL(string: post.imageURL))
-        detailView.displayNameLabel.text = post.postedBy
+        detailView.displayNameLabel.text = "Posted by: \(post.postedBy)"
         detailView.detailDescription.text = post.description
-
+        detailView.timeLabel.text = "Date Posted: \(post.listedDate.dateValue().dateString())"
     }
   
 

@@ -43,9 +43,8 @@ class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemOrange
-        configureButtons()
         updateUI()
+        configureButtons()
         addGestures()
     }
     
@@ -55,6 +54,7 @@ class ProfileViewController: UIViewController {
     }
     
     private func updateUI() {
+        view.backgroundColor = .systemBlue
         guard let user = Auth.auth().currentUser else {
             return
         }
@@ -92,7 +92,6 @@ class ProfileViewController: UIViewController {
         guard let displayName = profileView.displayNameTextField.text,
             !displayName.isEmpty,
             let selectedImage = selectedImage else {
-                print("missing fields")
                 return
         }
         
@@ -134,7 +133,7 @@ class ProfileViewController: UIViewController {
                     self.showAlert(title: "Error updating", message: error.localizedDescription)
                 }
             case .success:
-                print("successfully updated db user")
+                print("success")
             }
         }
     }

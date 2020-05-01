@@ -23,8 +23,15 @@ class DetailView: UIView {
         return label
     }()
     
+    public lazy var timeLabel: UILabel = {
+        let label = UILabel()
+        label.textAlignment = .center
+        return label
+    }()
+    
     public lazy var detailDescription: UITextView = {
         let textView = UITextView()
+        textView.isUserInteractionEnabled = false
         return textView
     }()
     
@@ -42,6 +49,7 @@ class DetailView: UIView {
     private func commonInit() {
         configurePhoto()
         configureLabel()
+        configureTimeLabel()
         configureTextView()
     }
     
@@ -66,14 +74,24 @@ class DetailView: UIView {
         ])
     }
     
+    private func configureTimeLabel() {
+        addSubview(timeLabel)
+        timeLabel.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            timeLabel.topAnchor.constraint(equalTo: displayNameLabel.bottomAnchor, constant: 20),
+            timeLabel.leadingAnchor.constraint(equalTo: leadingAnchor),
+            timeLabel.trailingAnchor.constraint(equalTo: trailingAnchor)
+        ])
+    }
+    
     private func configureTextView() {
         addSubview(detailDescription)
         detailDescription.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            detailDescription.topAnchor.constraint(equalTo: displayNameLabel.bottomAnchor, constant: 40),
+            detailDescription.topAnchor.constraint(equalTo: timeLabel.bottomAnchor, constant: 20),
             detailDescription.leadingAnchor.constraint(equalTo: leadingAnchor),
             detailDescription.trailingAnchor.constraint(equalTo: trailingAnchor),
-            detailDescription.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.2)
+            detailDescription.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.4)
         ])
     }
     

@@ -12,10 +12,15 @@ import Firebase
 
 class FeedCell: UICollectionViewCell {
     
+    
     override func layoutSubviews() {
-          super.layoutSubviews()
-        self.layer.cornerRadius = 20.0
-      }
+        super.layoutSubviews()
+        self.layer.cornerRadius = 50.0
+        imageView.clipsToBounds = true
+        imageView.layer.cornerRadius = 13
+        detailTextView.clipsToBounds = true
+        detailTextView.layer.cornerRadius = 13
+    }
     
     var currentPost: Post!
     
@@ -31,6 +36,7 @@ class FeedCell: UICollectionViewCell {
     
     public lazy var detailTextView: UITextView = {
         let textView = UITextView()
+        textView.isUserInteractionEnabled = false
         return textView
     }()
     
@@ -54,7 +60,7 @@ class FeedCell: UICollectionViewCell {
         addSubview(imageView)
         imageView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            imageView.topAnchor.constraint(equalTo: topAnchor),
+            imageView.topAnchor.constraint(equalTo: topAnchor, constant: 20),
             imageView.leadingAnchor.constraint(equalTo: leadingAnchor),
             imageView.trailingAnchor.constraint(equalTo: trailingAnchor),
             imageView.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.7)
@@ -82,7 +88,7 @@ class FeedCell: UICollectionViewCell {
         ])
     }
     
-  
+    
     
     public func configureCell(for post: Post) {
         updateUI(imageURL: post.imageURL, date: post.listedDate, description: post.description)

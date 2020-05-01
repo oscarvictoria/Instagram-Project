@@ -9,12 +9,12 @@
 import UIKit
 
 class ProfileView: UIView {
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        profilePhoto.clipsToBounds = true
-        profilePhoto.layer.cornerRadius = 90
-    }
     
+    override func layoutSubviews() {
+           super.layoutSubviews()
+           profilePhoto.clipsToBounds = true
+           profilePhoto.layer.cornerRadius = 90
+       }
     
     public lazy var profilePhoto: UIImageView = {
         let photo = UIImageView()
@@ -39,7 +39,7 @@ class ProfileView: UIView {
     
     public lazy var updateProfileButton: UIButton = {
         let button = UIButton()
-        button.setTitle("update profile", for: .normal)
+        button.setTitle("Update Profile", for: .normal)
         return button
     }()
     
@@ -84,7 +84,7 @@ class ProfileView: UIView {
         displayNameTextField.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             displayNameTextField.topAnchor.constraint(equalTo: profilePhoto.bottomAnchor, constant: 20),
-            displayNameTextField.leadingAnchor.constraint(equalTo: leadingAnchor),
+            displayNameTextField.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 8),
             displayNameTextField.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -60)
         ])
     }
