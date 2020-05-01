@@ -28,6 +28,7 @@
 		BE70F68D245B6C5600C3A222 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE70F68C245B6C5600C3A222 /* ProfileView.swift */; };
 		BE70F68F245B811900C3A222 /* UIImage + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE70F68E245B811900C3A222 /* UIImage + Extensions.swift */; };
 		BE70F691245B859900C3A222 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE70F690245B859900C3A222 /* FeedCell.swift */; };
+		BE70F693245BA93200C3A222 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE70F692245BA93200C3A222 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		BE70F68C245B6C5600C3A222 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		BE70F68E245B811900C3A222 /* UIImage + Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage + Extensions.swift"; sourceTree = "<group>"; };
 		BE70F690245B859900C3A222 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		BE70F692245BA93200C3A222 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 		BE70F66D245B51B000C3A222 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BE70F692245BA93200C3A222 /* Post.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				BE70F685245B69A600C3A222 /* CreatePostViewController.swift in Sources */,
 				BE70F67F245B579900C3A222 /* StorageService.swift in Sources */,
 				BE70F689245B6C3900C3A222 /* FeedView.swift in Sources */,
+				BE70F693245BA93200C3A222 /* Post.swift in Sources */,
 				BE70F656245B47F600C3A222 /* SceneDelegate.swift in Sources */,
 				BE70F67D245B577A00C3A222 /* DatabaseService.swift in Sources */,
 			);
