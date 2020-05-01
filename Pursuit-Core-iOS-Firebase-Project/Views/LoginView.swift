@@ -21,7 +21,7 @@ class LoginView: UIView {
     public lazy var usernameTextField: UITextField = {
         let textField = UITextField()
         textField.backgroundColor = .systemBackground
-        textField.placeholder = "username"
+        textField.placeholder = "email"
         return textField
     }()
     
