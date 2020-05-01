@@ -29,6 +29,8 @@
 		BE70F68F245B811900C3A222 /* UIImage + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE70F68E245B811900C3A222 /* UIImage + Extensions.swift */; };
 		BE70F691245B859900C3A222 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE70F690245B859900C3A222 /* FeedCell.swift */; };
 		BE70F693245BA93200C3A222 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE70F692245BA93200C3A222 /* Post.swift */; };
+		BE70F695245BC95100C3A222 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE70F694245BC95100C3A222 /* DetailViewController.swift */; };
+		BE70F697245BC96900C3A222 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE70F696245BC96900C3A222 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		BE70F68E245B811900C3A222 /* UIImage + Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage + Extensions.swift"; sourceTree = "<group>"; };
 		BE70F690245B859900C3A222 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		BE70F692245BA93200C3A222 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		BE70F694245BC95100C3A222 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		BE70F696245BC96900C3A222 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +146,7 @@
 				BE70F682245B698800C3A222 /* FeedViewController.swift */,
 				BE70F684245B69A600C3A222 /* CreatePostViewController.swift */,
 				BE70F686245B69C100C3A222 /* ProfileViewController.swift */,
+				BE70F694245BC95100C3A222 /* DetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -153,6 +158,7 @@
 				BE70F688245B6C3900C3A222 /* FeedView.swift */,
 				BE70F68A245B6C4800C3A222 /* CreateView.swift */,
 				BE70F68C245B6C5600C3A222 /* ProfileView.swift */,
+				BE70F696245BC96900C3A222 /* DetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -317,8 +323,10 @@
 				BE70F677245B52E500C3A222 /* MainTabBarController.swift in Sources */,
 				BE70F673245B52A100C3A222 /* LoginView.swift in Sources */,
 				BE70F68D245B6C5600C3A222 /* ProfileView.swift in Sources */,
+				BE70F695245BC95100C3A222 /* DetailViewController.swift in Sources */,
 				BE70F687245B69C100C3A222 /* ProfileViewController.swift in Sources */,
 				BE70F67B245B574E00C3A222 /* AuthenticationSession.swift in Sources */,
+				BE70F697245BC96900C3A222 /* DetailView.swift in Sources */,
 				BE70F685245B69A600C3A222 /* CreatePostViewController.swift in Sources */,
 				BE70F67F245B579900C3A222 /* StorageService.swift in Sources */,
 				BE70F689245B6C3900C3A222 /* FeedView.swift in Sources */,
